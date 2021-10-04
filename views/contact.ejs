@@ -1,0 +1,56 @@
+
+<%- include partials/header.ejs %>
+
+<%- include partials/main_nav.ejs %>
+  <!-- Main Content -->
+   <!DOCTYPE html>
+   <main class="container" style="height:650px;" class="span12" background-color: "transparent";>
+    <div class="jumbotron" style="height:700px;" class="span12">
+  <script type="text/javascript">
+        function redirect() { window.location.href='http://localhost:3000';}
+  </script>
+<html>
+<head>
+</head>
+<body>
+  <link href="/content/style.css" rel="stylesheet" type="text/css">
+  <h1>Contact Form</h1><br>
+  <form id="ContactForm" method="post" action="/contact" >
+    <div class="division">
+      <label for="inputFirstName">First Name</label>
+      <input type="text" class="form-control" id="FirstName" name="firstname" >
+   </div>
+   <div class="division">
+      <label for="inputLastName">Last Name</label>
+      <input type="text" class="form-control" id="FirstName" name="lastname" >
+    </div>
+    <div class="division">
+      <label for="inputContactNumber">Contact Number</label>
+      <input type="text" class="form-control" id="ContactNumber" name="contactnumber" >
+    </div>
+    <div class="division">
+       <label for="inputEmail">Email</label>
+      <input type="email" class="form-control" id="Email" name="email" >
+    </div>
+    <div class="division">
+      <label for="messageArea">Message</label>
+      <textarea class="form-control" id="Message" name = "message"  rows="4"></textarea>
+    </div> <br>
+    <input type="submit" name="submit" value="submit" >
+   
+  </form>
+  
+</body>
+</html>
+
+
+
+  
+<%- include partials/bottom_nav.ejs %>  
+
+<%- include partials/footer.ejs %>
+  
+
+
+
+

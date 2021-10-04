@@ -1,15 +1,45 @@
+
 <%- include partials/header.ejs %>
 
 <%- include partials/main_nav.ejs %>
-  
+
 
   <!-- Main Content -->
-  <main class="container">
-    <div class="jumbotron">
-      <h1 class="display-4">Welcome to the <%= title %> page</h1>
-      
-    </div>
+ 
+  <main class="container" >
+    <div class="jumbotron" style="height:650px;" class="span12" background-color: "transparent";>
+      <html>
+        <head>
+          
+        <style>
+        .myDiv {
+          border: 0px outset rgb(133, 103, 103);
+          background-color: rgb(53, 45, 45);    
+          text-align: left; color:rgb(235, 234, 241);
+          height: 40px;
+        }
+        </style>
+        </head>
+        <body>
+         <h1><center>Welcome to my Express Portfolio</center></h1> <br>
+         <div class="myDiv" style="width: inherit;" float: right >
+          <h3>  &nbsp Personal Mission Statement</h3>
+          <center> <img src ="/Assets/images/mission.png" style="width:200px;height:150px;" align=left>
+        </div>
+           <P style="font-size: 18px;">
+            <br>
+            I will always strive for continuous learning. I always try to see the good in everyone and learn from others. I believe in the balance of the emotional, social, spiritual, and physical aspects of my life. Life is short. Have fun and be kind to everyone.
+            <br><br>
+
+           </P>
+          
+        </body>
+        </html>
+            
+        </div>
   </main>
+
+  
   
 <%- include partials/bottom_nav.ejs %>  
 
